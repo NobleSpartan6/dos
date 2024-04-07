@@ -1,0 +1,45 @@
+/* src/components/Card.css */
+
+.player-hand {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 60px;
+  height: 100px;
+  border-radius: 8px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-value {
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Specific styles for different card colors */
+.card.red {
+  background-color: #f44336;
+}
+
+.card.yellow {
+  background-color: #ffeb3b;
+  color: black; /* For better contrast */
+}
+
+.card.blue {
+  background-color: #2196f3;
+}
+
+.card.green {
+  background-color: #4caf50;
+}
+
+/* Add more styles as needed for special cards like reverse, skip, etc. */

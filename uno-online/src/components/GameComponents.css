@@ -1,0 +1,149 @@
+/* src/components/GameComponents.css */
+
+/* Styles for ActionPanel */
+.action-panel button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for DiscardPile */
+.discard-pile .card {
+  width: 60px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+}
+
+/* Styles for DrawPile */
+.draw-pile {
+  padding: 10px;
+  background-color: #dddddd;
+  border-radius: 5px;
+}
+
+/* Styles for OpponentHand */
+.opponent-hand .card.back {
+  width: 60px;
+  height: 100px;
+  background-color: #333; /* Dark color for the card back */
+  margin: 5px;
+  border-radius: 8px;
+}
+
+/* Additional styles as needed */
+.opponent-hand {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.card.back {
+  width: 60px;
+  height: 100px;
+  background-color: #2e2e2e; /* Dark gray for the back of the card */
+  margin: 5px;
+  border-radius: 8px; /* Optional: for rounded corners */
+}
+
+.discard-pile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.card {
+  width: 60px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds a slight shadow for depth */
+}
+
+.card.back {
+  background-color: #2e2e2e; /* Dark gray for the back of a card */
+}
+
+/* Example color classes for cards */
+.card.red { background-color: #e74c3c; }
+.card.yellow { background-color: #f1c40f; }
+.card.green { background-color: #2ecc71; }
+.card.blue { background-color: #3498db; }
+
+.card-value {
+  font-size: 10px; /* Adjust based on your design */
+  text-align: center;
+  color: white; /* Color for the text */
+}
+
+.draw-pile {
+  width: 100px; /* Width of the draw pile */
+  height: 140px; /* Height of the draw pile, making it look like a stack of cards */
+  background-color: #007bff; /* A blue color, but consider using a card texture or image */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px; /* Gives the pile rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds some depth to the pile */
+  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+  transition: transform 0.2s ease; /* Smooth transition for the hover effect */
+}
+
+.draw-pile:hover {
+  transform: translateY(-5px); /* Slightly raises the pile on hover for a button-like effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increases the shadow to enhance the lifted effect */
+}
+
+.draw-pile p {
+  margin: 0; /* Removes default margin from the paragraph to avoid spacing issues */
+  font-size: 16px; /* Adjusts the size of the text inside the pile */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.action-panel {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+  background-color: #0056b3;
+}
+
+.uno-button {
+  background-color: #d9534f; /* Red color for the "Call Uno" button */
+}
+
+.uno-button:hover {
+  background-color: #c9302c;
+}
+
